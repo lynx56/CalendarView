@@ -145,7 +145,7 @@ extension CalendarView: UIScrollViewDelegate {
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         contentView.setContentOffset(CGPoint(x: contentView.frame.width, y: contentView.contentOffset.y), animated: true)
         delegate?.calendarDidPageToDate(contentView.currentMonth().date)
-        DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.high).async {
+        DispatchQueue.global(qos: .userInitiated) .async {
             guard let day = self.selectedDayOnPaged else { return }
             let dayView = self.contentView.selectVisibleDate(day)
             DispatchQueue.main.async {
