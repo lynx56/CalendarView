@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  CalendarView
+
+  Created by Toralf Niebuhr on 10.03.17.
+  Copyright © 2017 Nate Armstrong. All rights reserved.
+*/
+
+"SUN" = "SUN";
+"MON" = "MON";
+"TUE" = "TUE";
+"WED" = "WED";
+"THU" = "THU";
+"FRI" = "FRI";
+"SAT" = "SAT";
