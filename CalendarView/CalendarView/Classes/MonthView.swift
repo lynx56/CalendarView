@@ -25,13 +25,13 @@ class MonthView: UIView {
 
   var weeks: [WeekView] = []
   var weekLabels: [WeekLabel] = [
-    WeekLabel(day: Bundle.main.localizedString(forKey: "SUN", value: "", table: nil)),
-    WeekLabel(day: Bundle.main.localizedString(forKey: "MON", value: "", table: nil)),
-    WeekLabel(day: Bundle.main.localizedString(forKey: "TUE", value: "", table: nil)),
-    WeekLabel(day: Bundle.main.localizedString(forKey: "WED", value: "", table: nil)),
-    WeekLabel(day: Bundle.main.localizedString(forKey: "THU", value: "", table: nil)),
-    WeekLabel(day: Bundle.main.localizedString(forKey: "FRI", value: "", table: nil)),
-    WeekLabel(day: Bundle.main.localizedString(forKey: "SAT", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "SUN", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "MON", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "TUE", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "WED", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "THU", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "FRI", value: "", table: nil)),
+    WeekLabel(day: Bundle(for: MonthView.self).localizedString(forKey: "SAT", value: "", table: nil)),
   ]
 
   // these values are expensive to compute so cache them
